@@ -18,8 +18,12 @@
     "babel-plugin-styled-components": "^1.13.3",
     "gatsby": "^4.1.0",
     "gatsby-plugin-styled-components": "^5.1.0",
+    "gatsby-source-graphql": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
