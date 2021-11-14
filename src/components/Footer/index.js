@@ -86,6 +86,9 @@ const {logofooter, paragraphabout, paragraphcontact, paragraphcopyright, paragra
             </S.BoxParagraph>
         </S.BoxTitle>
         </S.ContainerFooter>
+        <S.BoxCopyright>
+            <S.TitleCopyright>{paragraphcopyright}</S.TitleCopyright>
+        </S.BoxCopyright>
         </>
     )
 }
