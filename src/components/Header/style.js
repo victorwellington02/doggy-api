@@ -35,7 +35,7 @@ cursor: pointer;
 `
 
 export const LogoHeader = styled.img`
-width: 20%;
+width: 60%;
 cursor: pointer;
 `
 
@@ -53,4 +53,8 @@ color: #373737;
 margin-right: 2rem;
 opacity: 1;
 cursor: pointer;
+`
+
+export const Links = styled.a`
+text-decoration: none;
 `

@@ -1,0 +1,19 @@
+.AnimationButtonMain {
+    animation: buttonmain .8s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+}
+        
+@keyframes buttonmain {
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.AnimationCircleMain {
+    animation: buttonmain .8s cubic-bezier(0.245, 0.325, 0.510, 1.305) infinite alternate;
+}
+        
+@keyframes buttonmain {
+    100% {
+        transform: scale(1.2);
+    }
+}

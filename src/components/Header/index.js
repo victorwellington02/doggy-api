@@ -1,6 +1,8 @@
 import React from "react";
 import {graphql, useStaticQuery} from'gatsby'
 import * as S from './style'
+import { Link } from 'gatsby'
+import "./styles.css"
 
 export function Header(){
 
@@ -29,18 +31,18 @@ const {btncontact, btnabout, btnhome, btnreservation, btnservices, logoheader, b
 
 return(
     <>
-    <S.ContainerHeader>
+    <S.ContainerHeader href="#" id="header">
         <S.BoxLogo>
-        <S.LogoHeader src={logoheader.url} alt=""/>
+        <S.Links href="http://localhost:8000/"><S.LogoHeader src={logoheader.url} alt=""/></S.Links>
         </S.BoxLogo>
         <S.BoxButtons>
-        <S.ButtonsHeader>{btnhome}</S.ButtonsHeader>
-        <S.ButtonsHeader>{btnabout}</S.ButtonsHeader>
-        <S.ButtonsHeader>{btnservices}</S.ButtonsHeader>
-        <S.ButtonsHeader>{btnreservation}</S.ButtonsHeader>
-        <S.ButtonsHeader>{btncontact}</S.ButtonsHeader>
-        <S.ImgTel src={imglogotel.url} alt=""/>
-        <S.ButtonsHeader>{btnnumber}</S.ButtonsHeader>
+        <S.Links href="http://localhost:8000/"><S.ButtonsHeader>{btnhome}</S.ButtonsHeader></S.Links>
+        <S.Links href="#about"><S.ButtonsHeader>{btnabout}</S.ButtonsHeader></S.Links>
+        <S.Links href="#services"><S.ButtonsHeader>{btnservices}</S.ButtonsHeader></S.Links>
+        <S.Links href="#reservation"><S.ButtonsHeader>{btnreservation}</S.ButtonsHeader></S.Links>
+        <S.Links href="#footer"><S.ButtonsHeader>{btncontact}</S.ButtonsHeader></S.Links>
+        <S.Links href="#"><S.ImgTel src={imglogotel.url} alt=""/></S.Links>
+        <S.Links href="#"><S.ButtonsHeader>{btnnumber}</S.ButtonsHeader></S.Links>
         </S.BoxButtons>
     </S.ContainerHeader>
     </>

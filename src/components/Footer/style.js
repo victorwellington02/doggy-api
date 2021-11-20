@@ -40,7 +40,7 @@ text-align: left;
 `
 
 export const LogoFooter = styled.img`
-width: 30%;
+width: 60%;
 cursor: pointer;
 `
 
@@ -71,4 +71,8 @@ font: normal normal normal 12px Malgun Gothic;
 letter-spacing: 0px;
 color: white;
 opacity: 1;
+`
+
+export const Links = styled.a`
+text-decoration: none;
 `

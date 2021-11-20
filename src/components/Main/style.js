@@ -46,7 +46,7 @@ opacity: 1;
 margin-bottom: 1.5rem;
 `
 
-export const ButtonBackground = styled.p`
+export const ButtonBackground = styled.a`
 font-size: 20px;
 background: #FEAF02 no-repeat padding-box;
 background-size: 50% auto;
@@ -58,6 +58,10 @@ color: #FFFFFF;
 text-transform: uppercase;
 opacity: 1;
 cursor: pointer;
+text-decoration:none;
+&:hover { 
+    color: #000;
+}
 `
 
 export const BoxDogs = styled.div`
@@ -98,6 +102,9 @@ color: #FFFFFF;
 opacity: 1;
 cursor: pointer;
 margin-top: 0.5rem;
+&:hover { 
+    color: #000;
+}
 `
 
 export const ImageDogBoard = styled.img`
@@ -132,6 +139,9 @@ color: #FFFFFF;
 opacity: 1;
 cursor: pointer;
 margin-top: 0.5rem;
+&:hover { 
+    color: #000;
+}
 `
 
 export const ImageDogDay = styled.img`
@@ -166,6 +176,9 @@ color: #FFFFFF;
 opacity: 1;
 cursor: pointer;
 margin-top: 0.5rem;
+&:hover { 
+    color: #000;
+}
 `
 
 export const ImageDogTrain = styled.img`
@@ -200,6 +213,9 @@ color: #FFFFFF;
 opacity: 1;
 cursor: pointer;
 margin-top: 0.5rem;
+&:hover { 
+    color: #000;
+}
 `
 
 export const ImageDogGroom = styled.img`
@@ -312,4 +328,8 @@ export const ImageStart = styled.img`
 margin-top: 5rem;
 height: 71px;
 cursor: pointer;
+`
+
+export const Links = styled.a`
+text-decoration: none;
 `

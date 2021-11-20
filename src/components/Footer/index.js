@@ -1,6 +1,7 @@
 import React from "react";
 import {graphql, useStaticQuery} from'gatsby'
 import * as S from './style'
+import "./styles.css"
 
 export function Footer(){
 
@@ -45,18 +46,18 @@ const {logofooter, paragraphabout, paragraphcontact, paragraphcopyright, paragra
 
     return(
         <>
-        <S.ContainerFooter>
+        <S.ContainerFooter href="#" id="footer">
         <S.BoxLogo>
-            <S.LogoFooter src={logofooter.url} alt=""/>
+        <S.Links href="#"><S.LogoFooter src={logofooter.url} alt=""/></S.Links>
         </S.BoxLogo>
         <S.BoxTitle>
             <S.TitleFooter>{titlelocation}</S.TitleFooter>
             <S.BoxParagraph>
-            <S.ParagraphFooter>{paragraphnort}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphname}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphnmbrp}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphnmbrs}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphemail}</S.ParagraphFooter>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphnort}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphname}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphnmbrp}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphnmbrs}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphemail}</S.ParagraphFooter></S.Links>
             </S.BoxParagraph>
         </S.BoxTitle>
         <S.BoxTitle>
@@ -69,20 +70,20 @@ const {logofooter, paragraphabout, paragraphcontact, paragraphcopyright, paragra
         <S.BoxTitle>
             <S.TitleFooter>{titlelinks}</S.TitleFooter>
             <S.BoxParagraph>
-            <S.ParagraphFooter>{paragraphhome}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphabout}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphservices}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphreservation}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphcontact}</S.ParagraphFooter>
+            <S.Links href="#header"><S.ParagraphFooter>{paragraphhome}</S.ParagraphFooter></S.Links>
+            <S.Links href="#about"><S.ParagraphFooter>{paragraphabout}</S.ParagraphFooter></S.Links>
+            <S.Links href="#services"><S.ParagraphFooter>{paragraphservices}</S.ParagraphFooter></S.Links>
+            <S.Links href="#reservation"><S.ParagraphFooter>{paragraphreservation}</S.ParagraphFooter></S.Links>
+            <S.Links href="#footer"><S.ParagraphFooter>{paragraphcontact}</S.ParagraphFooter></S.Links>
             </S.BoxParagraph>
         </S.BoxTitle>
         <S.BoxTitle>
             <S.TitleFooter>{titlesocials}</S.TitleFooter>
             <S.BoxParagraph>
-            <S.ParagraphFooter>{paragraphtwitter}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphfacebook}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphgoogle}</S.ParagraphFooter>
-            <S.ParagraphFooter>{paragraphpinterest}</S.ParagraphFooter>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphtwitter}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphfacebook}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphgoogle}</S.ParagraphFooter></S.Links>
+            <S.Links href="#"><S.ParagraphFooter>{paragraphpinterest}</S.ParagraphFooter></S.Links>
             </S.BoxParagraph>
         </S.BoxTitle>
         </S.ContainerFooter>

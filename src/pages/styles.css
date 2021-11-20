@@ -1,7 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/3a025ae92e6446cec24efcb6d29e5bf3?family=Malgun+Gothic);
+@import url('https://www.dafontfree.net/embed/bWFsZ3VuLWdvdGhpYy1ib2xkJmRhdGEvNDkvbS8zODI0OC9tYWxndW5iZC50dGY');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Malgun Gothic"
+    font-family: 'malgun-gothic-bold', sans-serif;
 }

@@ -1,0 +1,12 @@
+.AnimationLogoFooter {
+animation: sla 2s linear 1s infinite normal both;
+}
+
+@keyframes sla {
+    0% {
+      height: 70%;
+    }
+    100% {
+        height: 90%;
+    }
+  }
